@@ -69,7 +69,11 @@
   </header>
   <!-- hero section -->
   <section class="hero-section">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="assets/images/file.jpg" class="d-block w-100 object-fit-cover" alt="...">
@@ -538,21 +542,69 @@
   </section>
   
   <!-- footer section -->
-  <footer class="bg-dark text-white py-4">
+<footer class="footer-section bg-dark text-white">
+  <div class="footer-main">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6 mx-auto text-center" >
-              <p class="mb-2 mb-lg-0" style="line-height: 1.8;">Copyright © 2024 <a class="fw-600" style="color: #00fe9c;" href="/">ShoroBorno</a>. All Rights Reserved.</p>
-              <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" style="color: #00fe9c;" >Privacy</a></li>
-                <li class="list-inline-item"><a href="#" style="color: #00fe9c;" >Terms</a></li>
-                <li class="list-inline-item"><a href="#" style="color: #00fe9c;" >Support</a></li>
-              </ul>  
+      <div class="row">
+        <div class="col-md-5">
+          <div class="footer-logo">
+            <img
+              src="./assets/images/logo.jpg"
+              alt="logo"
+              class="img-fluid w-50"
+            />
+          </div>
+          <div class="footer-desc">ShoroBorno is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto enim explicabo voluptatem ea dolorem debitis to thrive in today’s digital age.</div>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
+        <div class="col-md-2">
+          <div class="useful-links">
+            <h5 class="footer-heading">Useful Links</h5>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="our-services">
+            <h5 class="footer-heading">Our Services</h5>
+            <ul>
+              <li><a href="#">SEO</a></li>
+              <li><a href="#">OTT</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">AI</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="contact-info">
+            <h5><span>Phone: </span>+8801312345678</h5>
+            <h5><span>Email: </span>info@shoroborno.com</h5>
+            <p class="address">
+              Level 7, 122 Bir Uttam Shamsul
+              Alam Sarak, Kakrail Road,
+              Dhaka-1217
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mx-auto text-center" >
+          <p class="mt-3" style="line-height: 1.8;">Copyright © 2024 <a class="fw-600" style="color: #00fe9c;" href="/">ShoroBorno</a>. All Rights Reserved.</p> 
+        </div>
     </div>
-    
+    </div>
+  </div>
 </footer>
+
 
   <!-- Al JS links Here -->
   <script src="./assets/js/all.min.js"></script>

@@ -10,6 +10,8 @@
   --logo-color: #009345;
   --prmry-color: #00FE9C;
   --transition: all 0.3s ease-in-out;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
 }
 
 .bg-prmry{
@@ -358,5 +360,81 @@ color: var(--prmry-color);
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 30px 12px rgba(0, 0, 0, 0.1);
 }
-/* footer  */
+/* footer  sections starts here*/
 
+
+.footer-main {
+  padding-top: 56px;
+  padding-bottom: 20px;
+}
+.footer-main .footer-logo {
+  margin-bottom: 30px;
+}
+.footer-main .footer-desc {
+  max-width: 396px;
+  font-family: var(--font-poppins);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.footer-main .social-icons {
+  display: flex;
+  gap: 34.34px;
+}
+.footer-main .social-icons a {
+  color: var(--logo-color);
+  font-size: 20px;
+  transition: var(--transition);
+}
+.footer-main .social-icons a:hover {
+  color: var(--prmry-color);
+  scale: 1.2;
+  
+}
+.footer-section .footer-main .footer-heading {
+  font-family: var(--font-roboto);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--prmry-color);
+  margin-bottom: 21px;
+}
+
+.footer-section .footer-main ul li a{
+font-family: var(--font-poppins);
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 286%;
+color: #fff;
+}
+.footer-section .footer-main .contact-info h5{
+font-family: var(--font-poppins);
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 286%; 
+color: #fff;
+}
+.footer-section .footer-main .contact-info h5 span{
+font-family: var(--font-roboto);
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 286%; 
+color: #fff;
+}
+.footer-section .footer-main .contact-info .address{
+font-family: var(--font-poppins);
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px; 
+color: #fff;
+margin-top: 10px;
+}
+/* =================footer sections ends here================ */
