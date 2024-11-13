@@ -100,6 +100,15 @@ a {
   line-height: 27px;
 }
 
+/*==============useability part starts here ==============*/
+
+.use-card {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 /*==============service part starts here ==============*/
 .service-section{
   background: #f8f9fa ;

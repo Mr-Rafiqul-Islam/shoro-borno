@@ -43,7 +43,10 @@
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
-
+            <li class="nav-item">
+              <a class="nav-link" href="#">Affiliate</a>
+            </li>
+            
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
               <ul class="dropdown-menu">
@@ -54,19 +57,110 @@
                 <li><a class="dropdown-item" href="#">Combo Offers</a></li>
               </ul>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live Chat</a>
+            </li>
           </ul>
 
           <div class="d-lg-flex col-lg-5 justify-content-lg-end align-items-center gap-2 mt-1 mt-lg-0">
             <form role="search">
               <input class="form-control" type="search" placeholder="Search" aria-label="Search">
             </form>
-            <a class="btn btn-outline-success mt-2 mt-lg-0 me-2 me-lg-0" href="#">Login</a>
-            <a class="btn btn-success mt-2 mt-lg-0" href="#">Sign Up</a>
+            <a class="btn btn-outline-success mt-2 mt-lg-0 me-2 me-lg-0" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+           
+            <a class="btn btn-success mt-2 mt-lg-0" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
           </div>
         </div>
       </div>
     </nav>
   </header>
+   <!-- Modal -->
+    <!-- login modal -->
+   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header p-5 pb-4 border-bottom-0">
+          <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+        
+            <div class="form-check text-start my-3">
+              <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Remember me
+              </label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-success" type="submit">Sign In</button>
+            <hr class="my-4">
+            <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
+              Sign In with Twitter
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
+              Sign In with Facebook
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
+              Sign In with GitHub
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- sigup modal -->
+   <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header p-5 pb-4 border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <div class="modal-body p-5 pt-0">
+          <form class="">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-success" type="submit">Sign up</button>
+            <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+            <hr class="my-4">
+            <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
+              Sign up with Twitter
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
+              Sign up with Facebook
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
+              Sign up with GitHub
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- hero section -->
   <section class="hero-section">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true" data-bs-interval="5000">
@@ -123,7 +217,7 @@
 
         <div class="col-sm-6 col-lg-3">
           <div class="featured-box px-md-4 text-center mb-4">
-            <div class="featured-box-icon text-prmry display-4"><i class="fas fa-bullhorn"></i></div>
+            <div class="featured-box-icon text-prmry display-5"><i class="fas fa-bullhorn"></i></div>
             <h4 class="fw-600 mb-3">SEO Marketing</h4>
             <p class="text-muted mb-0" style="line-height: 1.8;">Lorem Ipsum is simply dummy text of the
               printing and typesetting industry.</p>
@@ -131,7 +225,7 @@
         </div>
         <div class="col-sm-6 col-lg-3">
           <div class="featured-box px-md-4 text-center mb-4">
-            <div class="featured-box-icon text-prmry display-4"><i class="fa-solid fa-user-astronaut"></i></div>
+            <div class="featured-box-icon text-prmry display-5"><i class="fa-solid fa-user-astronaut"></i></div>
             <h4 class="fw-600 mb-3">AI Subscription</h4>
             <p class="text-muted mb-0" style="line-height: 1.8;">Lorem Ipsum is simply dummy text of the
               printing and typesetting industry.</p>
@@ -139,7 +233,7 @@
         </div>
         <div class="col-sm-6 col-lg-3">
           <div class="featured-box px-md-4 text-center mb-4">
-            <div class="featured-box-icon text-prmry display-4"><i class="fa-brands fa-steam"></i></div>
+            <div class="featured-box-icon text-prmry display-5"><i class="fa-brands fa-steam"></i></div>
             <h4 class="fw-600 mb-3">OTT Subscription</h4>
             <p class="text-muted mb-0" style="line-height: 1.8;">Lorem Ipsum is simply dummy text of the
               printing and typesetting industry.</p>
@@ -147,7 +241,7 @@
         </div>
         <div class="col-sm-6 col-lg-3">
           <div class="featured-box px-md-4 text-center mb-4">
-            <div class="featured-box-icon text-prmry display-4"><i class="fa-solid fa-basketball"></i></div>
+            <div class="featured-box-icon text-prmry display-5"><i class="fa-solid fa-basketball"></i></div>
             <h4 class="fw-600 mb-3">Sports Subscription</h4>
             <p class="text-muted mb-0" style="line-height: 1.8;">Lorem Ipsum is simply dummy text of the
               printing and typesetting industry. </p>
@@ -176,7 +270,30 @@
       </marquee>  
     </div>
   </section>
-  <!-- ===========Our product section========== -->
+
+  <!-- ===========Usabilty section========== -->
+   <section class="usabilty-section py-5">
+    <div class="container">
+      <div class="section-title text-center mb-1">
+        <h2 class="text-center h6 d-inline-block bg-prmry fw-medium mb-2 px-2 py-1">Useablity</h2>
+        <p class="fs-1 fw-medium text-center text-capitalize">Designed for Your Ease</p>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6 text-center p-3">
+          <div class="use-card p-3 shadow-lg rounded">
+            <h2 class="fw-bold text-success text-center mb-4">How to Use</h2>
+          <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus illum omnis quam aut beatae quaerat fuga doloribus enim est.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mt-5 mt-md-0 ps-5">
+          <div class="use-card p-3 shadow-lg rounded">
+            <h2 class="fw-bold text-success text-center mb-4">How to Access</h2>
+          <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nisi delectus architecto perferendis libero, ipsam enim eligendi dolore obcaecati eum!</p>
+          </div>
+      </div>
+    </div>
+   </section>
+  <!-- ===========Our product Section========== -->
   <section class="section-products py-5">
     <div class="container">
       <div class="section-title text-center mb-1">
@@ -568,7 +685,7 @@
           </a>
           <div class="footer-desc">ShoroBorno is a Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto enim explicabo voluptatem ea dolorem debitis to thrive in today’s digital age.</div>
             <div class="social-icons">
-              <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
               <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
               <a href="#"><i class="fa-brands fa-instagram"></i></a>
               <a href="#"><i class="fa-brands fa-youtube"></i></a>
@@ -619,9 +736,9 @@
 
 
   <!-- Al JS links Here -->
+  <script src="./assets/js/jquery-3.7.1.min.js"></script>
   <script src="./assets/js/all.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
-  <script src="./assets/js/jquery-3.7.1.min.js"></script>
   <script src="./assets/js/slick.min.js"></script>
   <script src="./assets/js/custom.js"></script>
 </body>
