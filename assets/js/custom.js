@@ -186,3 +186,8 @@ $(".responsive-slider").slick({
     // Initialize with monthly pricing by default
     updatePricing('monthly');
 });
+
+// for venobox 
+new VenoBox({
+  selector: '.my-video-links',
+});

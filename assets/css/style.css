@@ -111,6 +111,24 @@ a {
   align-items: center;
   justify-content: center;
 }
+.use-card .my-video-links{
+  font-size: 60px;
+  color: var(--logo-color);
+}
+.use-card .more-btn{
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition);
+}
+.use-card .more-btn .ri{
+  transition: var(--transition);
+}
+
+.use-card .more-btn:hover .ri{
+  transform: translateX(10px);
+}
 /*==============service part starts here ==============*/
 .service-section {
   background: #f8f9fa;
