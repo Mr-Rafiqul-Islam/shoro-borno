@@ -483,9 +483,13 @@ margin-top: 10px;
 /* =================footer sections ends here================ */
 /* =================Responsive parts strats here================ */
 @media screen and (max-width: 767px) {
-  
+  .form-width{
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  
+  .form-width{
+    width: 100%;
+  }
 }
 /* =================Responsive parts ends here================ */
