@@ -75,6 +75,9 @@ a {
   transition: opacity 0.3s ease-in-out;
   top: 40px;
 }
+.form-width{
+  width:40%;
+}
 
 /* ===============hero part starts here ================*/
 .carousel-item{
@@ -478,3 +481,11 @@ color: #fff;
 margin-top: 10px;
 }
 /* =================footer sections ends here================ */
+/* =================Responsive parts strats here================ */
+@media screen and (max-width: 767px) {
+  
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  
+}
+/* =================Responsive parts ends here================ */
