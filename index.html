@@ -48,10 +48,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Affiliate</a>
-            </li>
-            
             <li class="nav-item dropdown ">
               <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
               <ul class="dropdown-menu">
@@ -63,7 +59,10 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Live Chat</a>
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"  data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
             </li>
           </ul>
 
@@ -71,9 +70,9 @@
             <form role="search" class="form-width">
               <input class="form-control" type="search" placeholder="Search" aria-label="Search" >
             </form>
-            <a class="btn btn-outline-success mt-2 mt-lg-0 me-2 me-lg-0" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+            <a class="btn btn-outline-success mt-2 mt-lg-0 me-2 me-lg-0" >Affiliate</a>
            
-            <a class="btn btn-success mt-2 mt-lg-0" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+            <a class="btn btn-success mt-2 mt-lg-0">Live Chat</a>
           </div>
         </div>
       </div>
@@ -106,6 +105,7 @@
                 Remember me
               </label>
             </div>
+            <a href="#" class="mb-3">Forgot password?</a>
             <button class="w-100 mb-2 btn btn-lg rounded-3 btn-success" type="submit">Sign In</button>
             <hr class="my-4">
             <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
@@ -119,7 +119,7 @@
             </button>
             <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
               <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
-              Sign In with GitHub
+              Sign In with Google
             </button>
           </form>
         </div>
@@ -159,7 +159,7 @@
             </button>
             <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
               <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"></use></svg>
-              Sign up with GitHub
+              Sign up with Google
             </button>
           </form>
         </div>
@@ -198,12 +198,12 @@
           <p class="fs-1 fw-medium text-center">Understanding the Decision</p>
         </div>
       </div>
-      <div class="row align-items-center mt-5">
+      <div class="row align-items-center mt-md-5">
         <div class="col-12 col-md-6 text-center p-3">
-          <img src="./assets/images/satisfied-client.jpg" class="mx-auto img-fluid object-fit-cover rounded" alt="">
+          <img src="./assets/images/why.jpg" class="mx-auto img-fluid object-fit-cover rounded" alt="">
         </div>
-        <div class="col-12 col-md-6 mt-5 mt-md-0 ps-5">
-          <h2 class="fw-bold text-success text-center text-md-start mb-4">Your Satisfaction, Our Priority</h2>
+        <div class="col-12 col-md-6 mt-5 mt-md-0 ps-lg-5">
+          <h3 class="fw-bold text-success text-center text-md-start mb-4">Your Satisfaction, Our Priority</h3>
 
           <p class="mb-4">Available 24/7/365, we believe that exceptional service is essential. Our team is committed to making your experience smooth and enjoyable. We listen, respond promptly, and offer personalized support to meet your needs. Whether guiding you through options or addressing concerns, we’re here every step of the way. Your satisfaction drives us, and we aim to exceed expectations. With us, you're not just a customer; you’re a valued part of our community.</p>
 
@@ -285,16 +285,16 @@
         <h2 class="text-center h6 d-inline-block bg-prmry fw-medium mb-2 px-2 py-1">Useablity</h2>
         <p class="fs-1 fw-medium text-center text-capitalize">Designed for Your Ease</p>
       </div>
-      <div class="row align-items-center">
-        <div class="col-12 col-md-6 text-center p-3">
-          <div class="use-card p-3 shadow-lg rounded">
-            <h2 class="fw-bold text-success text-center mb-4">How to Use</h2>
+      <div class="row align-items-center mt-2">
+        <div class="col-12 col-md-6 text-center p-3 mt-3 mt-md-0">
+          <div class="use-card p-4 shadow-lg  rounded">
+            <h3 class="fw-bold text-success text-center mb-4">How to Use</h3>
           <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus illum omnis quam aut beatae quaerat fuga doloribus enim est.</p>
           </div>
         </div>
-        <div class="col-12 col-md-6 text-center mt-5 mt-md-0">
-          <div class="use-card p-3 shadow-lg rounded">
-            <h2 class="fw-bold text-success text-center mb-4">How to Access</h2>
+        <div class="col-12 col-md-6 text-center mt-2 mt-md-0 p-3">
+          <div class="use-card p-4 shadow-lg  rounded">
+            <h3 class="fw-bold text-success text-center mb-4">How to Access</h3>
           <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nisi delectus architecto perferendis libero, ipsam enim eligendi dolore obcaecati eum!</p>
           </div>
       </div>
@@ -495,7 +495,7 @@
 
       </div>
       <!-- ================== pricing plans ================ -->
-      <div class="row mt-4">
+      <div class="row mt-4 responsive-slider">
         <!-- Freebie Plan -->
         <div class="col-md-4 mb-4">
           <div class="pricingCard">
@@ -698,7 +698,7 @@
               <a href="#"><i class="fa-brands fa-youtube"></i></a>
             </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-6 mt-3 mt-md-0 col-md-2">
           <div class="useful-links">
             <h5 class="footer-heading">Useful Links</h5>
             <ul>
@@ -709,7 +709,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="col-6 mt-3 mt-md-0 col-md-2">
           <div class="our-services">
             <h5 class="footer-heading">Our Services</h5>
             <ul>
@@ -720,7 +720,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-2">
+        <div class="mt-4 mt-md-0 text-center text-md-start col-md-2">
           <div class="contact-info">
             <h5><span>Phone: </span>+8801312345678</h5>
             <h5><span>Email: </span>info@shoroborno.com</h5>

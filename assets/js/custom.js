@@ -96,6 +96,54 @@
       // instead of a settings object
     ]
   });
+  // for pricing slider
+$(".responsive-slider").slick({
+  dots: true,
+  infinite: true,
+  autoplay: true,
+  speed: 300,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 2560,
+      settings: "unslick",
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        speed: 300,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        speed: 300,
+      },
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        speed: 300,
+      },
+    },
+
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ],
+});
 
   // for dyanamic pricing
   $(document).ready(function() {
