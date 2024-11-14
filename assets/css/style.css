@@ -77,7 +77,9 @@ a {
 .form-width {
   width: 40%;
 }
-
+.currency-selector{
+  padding: 5px;
+}
 /* ===============hero part starts here ================*/
 .carousel-item {
   max-height: 60vh;
@@ -279,6 +281,30 @@ a {
   padding: 72px 0;
   background: #f5f6f7;
 }
+/* for slider */
+.pricingCard{
+  margin: 0 10px !important;
+}
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 25px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: var(--logo-color);
+}
 
 /* =================card styling here================ */
 .pricingCard {
@@ -357,19 +383,21 @@ a {
 }
 .pricingCard a {
   margin-top: 24px;
-  margin-bottom: 40px;
   border-radius: 20px;
-  width: 100%;
   color: var(--logo-color);
   text-align: center;
   font-family: Roboto, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
   border: 1.5px solid var(--logo-color);
   padding: 6px 12px;
   transition: all 0.3s ease-in-out;
+}
+.pricingCard-footer{
+  display: flex;
+justify-content: space-around;
 }
 .pricingCard ul {
   list-style: none;
@@ -377,6 +405,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-top: 20px;
 }
 .pricingCard ul li {
   color: #15294b;
@@ -518,10 +547,7 @@ a {
     margin-top: 20px;
     margin-bottom: 30px;
   }
-/* for slider */
-.pricingCard{
-  margin: 0 10px !important;
-}
+
   /* =================mobile device responsive parts ends here================ */
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
