@@ -307,6 +307,18 @@ a {
 }
 
 /* =================card styling here================ */
+.pricing .nav{
+  display: flex;
+    justify-content: center;
+    margin-top: 15px;
+} 
+.pricing .nav .nav-link{
+  color: var(--logo-color);
+}
+.pricing .nav .nav-link.active{
+  color: white;
+  background: var(--logo-color);
+}
 .pricingCard {
   padding: 40px 24px;
   background: #fff;
