@@ -205,10 +205,7 @@ new VenoBox({
   selector: ".my-video-links",
 });
 
-// for mixit up
-var containerEl = document.querySelector(".mixitup-container");
 
-var mixer = mixitup(containerEl);
 // for hiding extra cards
 
 $(document).ready(function () {
