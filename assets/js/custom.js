@@ -204,3 +204,28 @@ $(document).ready(function () {
 new VenoBox({
   selector: ".my-video-links",
 });
+
+// for mixit up
+var containerEl = document.querySelector(".mixitup-container");
+
+var mixer = mixitup(containerEl);
+// for hiding extra cards
+
+$(document).ready(function () {
+  const cards = $('.mix');
+
+  // Initially hide all cards after the first 3
+  const showInitialCards = () => {
+      cards.slice(3).hide();
+  };
+
+  // Toggle between showing and hiding extra cards
+  $('#toggle-btn').click(function () {
+      const isExpanded = $(this).text() === 'Hide';
+      cards.slice(3).toggle(!isExpanded);
+      $(this).text(isExpanded ? 'More' : 'Hide');
+  });
+
+  // Set up initial view
+  showInitialCards();
+});
