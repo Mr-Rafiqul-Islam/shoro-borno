@@ -97,6 +97,25 @@ a {
   background-color: rgba(0, 0, 0, 0.6);
 } */
 /* ===============why part starts========== */
+.core-values{
+  background: #f8f9fa;
+}
+.core-values .value-card{
+transition: var(--transition);
+}
+.core-values .value-card:hover{
+  transform: translateY(-10px);
+}
+.core-values .value-card div{
+  color: #64748b;
+}
+.core-values h4{
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--font-roboto);
+  color: #15294b;
+}
+/* ===============why part starts========== */
 .why-section p {
   font-size: 1rem;
   font-weight: normal;
