@@ -115,6 +115,11 @@ a {
 }
 .use-card .my-video-links{
   font-size: 60px;
+  color: var(--prmry-color);
+  transition: var(--transition);
+}
+.use-card .my-video-links:hover {
+  scale: 1.1;
   color: var(--logo-color);
 }
 .use-card .more-btn{
