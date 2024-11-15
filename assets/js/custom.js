@@ -22,7 +22,7 @@ $(".my-slider").slick({
     {
       breakpoint: 992,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
         dots: true,
@@ -96,62 +96,7 @@ $(".review-slider").slick({
     // instead of a settings object
   ],
 });
-// for pricing slider
-$(".responsive-slider").slick({
-  dots: true,
-  infinite: true,
-  autoplay: true,
-  speed: 300,
-  autoplaySpeed: 2000,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 2560,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        dots: true,
-        infinite: true,
-        speed: 300,
-      },
-    },
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        dots: true,
-        infinite: true,
-        speed: 300,
-      },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        dots: true,
-        infinite: true,
-        speed: 300,
-      },
-    },
-    {
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true,
-        infinite: true,
-        speed: 300,
-      },
-    },
 
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ],
-});
 
 // for dyanamic pricing
 $(document).ready(function () {

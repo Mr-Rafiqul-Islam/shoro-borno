@@ -102,6 +102,7 @@ a {
 }
 .core-values .value-card {
   transition: var(--transition);
+  height: 118.45px;
 }
 .core-values .value-card:hover {
   transform: translateY(-10px);
