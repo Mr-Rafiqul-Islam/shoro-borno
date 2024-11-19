@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="ShoroBorno is an online platform where you can buy online services." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale="5.0" minimum-scale="1.0"
         user-scalable="yes" />
-    <title>Checkout</title>
+    <title>Terms & Conditions</title>
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <!-- ALL CSS LINKS HERE -->
+    <!-- google fonts -->
+
+    <!-- All CSS links Here -->
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/slick.css" />
     <link rel="stylesheet" href="./assets/css/slick-theme.css" />
+    <link rel="stylesheet" href="./assets/css/venobox.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
-
 <body>
     <!-- Header Start -->
     <header class="sticky-top">
@@ -41,7 +42,7 @@
                     <a class="navbar-brand col-lg-2 me-0 mt-2 mt-lg-0 d-none d-lg-block" href="/">
                         <img src="./assets/images/logo.jpg" class="w-100 h-auto" alt="" />
                     </a>
-                    <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+                    <ul class="navbar-nav col-lg-5 justify-content-lg-center">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li>
@@ -68,13 +69,18 @@
                         </li>
                     </ul>
 
-                    <div class="d-lg-flex col-lg-4 justify-content-lg-end align-items-center gap-2 mt-1 mt-lg-0">
+                    <div class="d-lg-flex col-lg-5 justify-content-lg-end align-items-center gap-2 mt-1 mt-lg-0">
                         <form role="search" class="form-width">
                             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                         </form>
                         <a class="btn btn-outline-success mt-2 mt-lg-0 me-2 me-lg-0">Affiliate</a>
 
                         <a class="btn btn-success mt-2 mt-lg-0">Live Chat</a>
+                        <select class="currency-selector shadow-none rounded border-success ">
+                            <option data-symbol="$" data-placeholder="0.00" selected>USD</option>
+                            <option data-symbol="€" data-placeholder="0.00">EUR</option>
+                            <option data-symbol="£" data-placeholder="0.00">INR</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -183,205 +189,122 @@
         </div>
     </div>
     <!-- Modal part end here-->
-    <div class="container">
-        <main>
-            <div class="py-5 text-center">
-                <h2>Checkout form</h2>
-            </div>
-
-            <div class="row g-5">
-                <div class="col-md-5 col-lg-4 order-md-last">
-                    <h4 class="d-flex justify-content-between align-items-center mb-3">
-                        <span class="text-prmry">Your cart</span>
-                        <span class="badge bg-logo rounded-pill">3</span>
-                    </h4>
-                    <ul class="list-group mb-3">
-                        <li class="list-group-item d-flex justify-content-between lh-sm">
-                            <div>
-                                <h6 class="my-0">Product name</h6>
-                                <small class="text-body-secondary">Brief description</small>
-                            </div>
-                            <span class="text-body-secondary">$12</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-sm">
-                            <div>
-                                <h6 class="my-0">Second product</h6>
-                                <small class="text-body-secondary">Brief description</small>
-                            </div>
-                            <span class="text-body-secondary">$8</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between lh-sm">
-                            <div>
-                                <h6 class="my-0">Third item</h6>
-                                <small class="text-body-secondary">Brief description</small>
-                            </div>
-                            <span class="text-body-secondary">$5</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between bg-body-tertiary">
-                            <div class="text-success">
-                                <h6 class="my-0">Promo code</h6>
-                                <small>EXAMPLECODE</small>
-                            </div>
-                            <span class="text-success">−$5</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            <span>Total (USD)</span>
-                            <strong>$20</strong>
-                        </li>
-                    </ul>
-
-                    <form class="card p-2">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Promo code">
-                            <button type="submit" class="btn btn-secondary">Redeem</button>
+     <main class="min-vh-100 py-5 terms-conditions-section">
+         <!-- pageheader -->
+         <section class="py-8">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-12 col-12">
+                        <!-- text center -->
+                        <div class="text-center">
+                            <h1 class="display-3 fw-bold">Terms & Conditions</h1>
+                            <p class="lead px-8">Read our terms below to learn more about your rights and responsibilities as a Product Name user.</p>
                         </div>
-                    </form>
-                </div>
-                <div class="col-md-7 col-lg-8">
-                    <h4 class="mb-3">Billing address</h4>
-                    <form class="needs-validation" novalidate="">
-                        <div class="row g-3">
-                            <div class="col-12">
-                                <label for="firstName" class="form-label">Full name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value=""
-                                    required="">
-                                <div class="invalid-feedback">
-                                    Valid Full name is required.
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <label for="email" class="form-label">Email </label>
-                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                                <div class="invalid-feedback">
-                                    Please enter a valid email address for shipping updates.
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="address" placeholder="1234 Main St"
-                                    required="">
-                                <div class="invalid-feedback">
-                                    Please enter your shipping address.
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <label for="address2" class="form-label">Address 2 <span
-                                        class="text-body-secondary">(Optional)</span></label>
-                                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-                            </div>
-
-                            <div class="col-md-5">
-                                <label for="country" class="form-label">Country</label>
-                                <select class="form-select" id="country" required="">
-                                    <option value="">Choose...</option>
-                                    <option>United States</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please select a valid country.
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <label for="state" class="form-label">State</label>
-                                <select class="form-select" id="state" required="">
-                                    <option value="">Choose...</option>
-                                    <option>California</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please provide a valid state.
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <label for="zip" class="form-label">Zip</label>
-                                <input type="text" class="form-control" id="zip" placeholder="" required="">
-                                <div class="invalid-feedback">
-                                    Zip code required.
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr class="my-4">
-
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="same-address">
-                            <label class="form-check-label" for="same-address">Shipping address is the same as my
-                                billing address</label>
-                        </div>
-
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="save-info">
-                            <label class="form-check-label" for="save-info">Save this information for next time</label>
-                        </div>
-
-                        <hr class="my-4">
-
-                        <h4 class="mb-3">Payment</h4>
-
-                        <div class="my-3">
-                            <div class="form-check">
-                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked=""
-                                    required="">
-                                <label class="form-check-label" for="credit">Credit card</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input"
-                                    required="">
-                                <label class="form-check-label" for="debit">Debit card</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input"
-                                    required="">
-                                <label class="form-check-label" for="paypal">PayPal</label>
-                            </div>
-                        </div>
-
-                        <div class="row gy-3">
-                            <div class="col-md-6">
-                                <label for="cc-name" class="form-label">Name on card</label>
-                                <input type="text" class="form-control" id="cc-name" placeholder="" required="">
-                                <small class="text-body-secondary">Full name as displayed on card</small>
-                                <div class="invalid-feedback">
-                                    Name on card is required
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="cc-number" class="form-label">Credit card number</label>
-                                <input type="text" class="form-control" id="cc-number" placeholder="" required="">
-                                <div class="invalid-feedback">
-                                    Credit card number is required
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <label for="cc-expiration" class="form-label">Expiration</label>
-                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
-                                <div class="invalid-feedback">
-                                    Expiration date required
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <label for="cc-cvv" class="form-label">CVV</label>
-                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
-                                <div class="invalid-feedback">
-                                    Security code required
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr class="my-4">
-
-                        <button class="w-100 btn btn-success mb-4" type="submit">Continue to checkout</button>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </main>
-    </div>
-      <!-- footer section -->
+        </section>
+        <!-- content -->
+        <section class="pb-8">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-12 col-12">
+                        <!-- date -->
+                        <div class="py-3 mb-5 border-bottom">
+                            <h3>
+                                Updated date:
+                                <span class="text-primary">23rd of March, 2024</span>
+                            </h3>
+                        </div>
+                        <!-- heading -->
+                        <h1 class="fw-bold mb-3">Terms:</h1>
+                        <!-- para -->
+                        <p class="fs-4 mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Stress, for the United States element ante. Duis cursus, mi quis viverra ornare, eros pain, sometimes none at
+                            all, freedom of the living creature was as the profit and financial security. Jasmine neck adapter and just running it lorem makeup sad smile of the television set.
+                        </p>
+                        <!-- para -->
+                        <p class="mb-1 fs-4">
+                            <span class="text-dark fw-semibold">Email:</span>
+                            hello@geeksui.com
+                        </p>
+                        <!-- para -->
+                        <p class="mb-1 fs-4">
+                            <span class="text-dark fw-semibold">Address:</span>
+                            52, Komal Villas, Mansarovar Vadodara - 374321
+                        </p>
+                        <!-- para -->
+                        <div class="d-flex mt-5">
+                            <div>
+                                <h3 class="fw-bold">A</h3>
+                            </div>
+                            <div class="ms-3">
+                                <h3 class="fw-bold">This is a H3's perfect for the titles.</h3>
+                                <p class="fs-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Stress, for the United States element ante. Duis cursus, mi quis viverra ornare, eros pain, none at
+                                    all, freedom of the living creature was as the profit and financial security. Jasmine neck adapter and just running it lorem makeup hairstyle. Now sad smile of
+                                    the television set.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- para -->
+                        <div class="d-flex mt-3">
+                            <div>
+                                <h3 class="fw-bold">B</h3>
+                            </div>
+                            <div class="ms-3">
+                                <h3 class="fw-bold">This is a H3's perfect for the titles.</h3>
+                                <p class="fs-4">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Stress, for the United States element ante. Duis cursus, mi quis viverra ornare, eros pain, none at
+                                    all, freedom of the living creature was as the profit and financial security. Jasmine neck adapter and just running it lorem makeup hairstyle. Now sad smile of
+                                    the television set.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- para -->
+                        <div class="mt-5">
+                            <h2 class="fw-bold">Users Licences:</h2>
+                            <p class="fs-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Stress, for the United States element ante. Duis cursus, mi quis viverra ornare, eros pain , sometimes none
+                                at all, freedom of the living creature was as the profit and financial security. Jasmine neck adapter and just running it lorem makeup hairstyle. Now sad smile of
+                                the television set.
+                            </p>
+                            <!-- list -->
+                            <ul class="fs-4">
+                                <li>More than 60+ components</li>
+                                <li>Five ready tests</li>
+                                <li>Coming soon page</li>
+                                <li>Check list with left icon</li>
+                                <li>And much more ...</li>
+                            </ul>
+                        </div>
+                        <!-- para -->
+                        <div class="mt-5">
+                            <h2 class="fw-bold">Limitations</h2>
+                            <p class="fs-4">
+                                Geeks ui takes the privacy of its users very seriously. For the current our Privacy Policy, please click
+                                <a href="#">here</a>
+                                .
+                            </p>
+                            <p class="mb-6 fs-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus, mi quis viverra ornare, eros pain, sometimes none at all, freedom of the living creature was
+                                as the profit and financial security. Jasmine neck adapter and just running it lorem makeup hairstyle. Now sad smile of the television set.
+                            </p>
+                            <h2 class="fw-bold my-3">Disclaimer</h2>
+                            <p class="fs-4">
+                                If we change our terms of use we will post those changes on this page. Registered users will be sent an email that outlines changes made to the terms of use.
+                            </p>
+                            <p class="fs-4">
+                                Questions? Please email us at
+                                <a href="#">hello@example.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </main>
+     <!-- footer section -->
   <footer class="footer-section bg-dark text-white">
     <div class="footer-main">
       <div class="container">
@@ -442,15 +365,5 @@
       </div>
     </div>
   </footer>
-
-
-  <!-- Al JS links Here -->
-  <script src="./assets/js/jquery-3.7.1.min.js"></script>
-  <script src="./assets/js/all.min.js"></script>
-  <script src="./assets/js/bootstrap.min.js"></script>
-  <script src="./assets/js/slick.min.js"></script>
-  <script src="./assets/js/venobox.min.js"></script>
-  <script src="./assets/js/custom.js"></script>
 </body>
-
 </html>

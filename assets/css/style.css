@@ -561,6 +561,10 @@ color: white;
   margin-top: 10px;
 }
 /* =================footer sections ends here================ */
+/* =================Terms and conditions sections ends here================ */
+.terms-conditions-section{
+  font-family: var(--font-roboto);
+}
 /* =================Responsive parts strats here================ */
 @media screen and (max-width: 767px) {
   /* header part */
