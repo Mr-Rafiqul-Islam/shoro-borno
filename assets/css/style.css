@@ -561,10 +561,8 @@ color: white;
   margin-top: 10px;
 }
 /* =================footer sections ends here================ */
-/* =================Terms and conditions sections ends here================ */
-.terms-conditions-section{
-  font-family: var(--font-roboto);
-}
+
+
 /* =================Responsive parts strats here================ */
 @media screen and (max-width: 767px) {
   /* header part */
@@ -619,3 +617,23 @@ color: white;
   }
 }
 /* =================Responsive parts ends here================ */
+
+
+/* =================
+    Other Pages CSS Starts Here
+=================  */
+
+
+/* =================Terms and conditions sections ends here================ */
+.terms-conditions-section{
+  font-family: var(--font-roboto);
+}
+/* =================Newsletter sections ends here================ */
+.newsletter-section{
+  background-image: url(../images/monochromatic-still-life-composition-with-red-paper.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding:100px 0;
+}
