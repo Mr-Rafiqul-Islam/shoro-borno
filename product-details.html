@@ -22,11 +22,21 @@
     <link rel="stylesheet" href="./assets/css/slick-theme.css" />
     <link rel="stylesheet" href="./assets/css/venobox.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Add active style -->
+    <style>
+        .product-details .btn.active {
+            background-color: #0dcaf0;
+            /* Same as Bootstrap info background */
+            color: white;
+            border-color: #0dcaf0;
+        }
+    </style>
 </head>
 
 <body>
     <main>
-        <section class="py-5">
+        <section class="product-details py-5">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-6 d-flex align-items-center text-center justify-content-center">
@@ -38,9 +48,10 @@
                         <div class="product-detals p-2">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                  <li class="breadcrumb-item"><a href="/" class="text-capitalize">home</a></li>
-                                  <li class="breadcrumb-item"><a href="#" class="text-capitalize">Education</a></li>
-                                  <li class="breadcrumb-item active" aria-current="page" class="text-capitalize">AI</li>
+                                    <li class="breadcrumb-item"><a href="/" class="text-capitalize">home</a></li>
+                                    <li class="breadcrumb-item"><a href="#" class="text-capitalize">Education</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page" class="text-capitalize">AI
+                                    </li>
                                 </ol>
                             </nav>
                             <h2 class="fw-bold mb-4">Artificial Intelligence</h2>
@@ -48,33 +59,194 @@
 
                             <!-- short description -->
 
-                            <p class="mb-4 w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum labore, illum ipsum, voluptate eius accusantium architecto nobis consequatur eligendi voluptates, illo totam tempore nesciunt? Laudantium ex omnis dignissimos. Iste voluptatibus sit assumenda cum reiciendis,</p>
-                            
-                                <!-- account type -->
-                                 <div class="d-flex flex-column gap-3 mb-3">
-                                    <h6 class="fw-bold">Account Type</h6>
-                                    <div class="d-flex gap-2">
-                                        <button class="bg-transparent px-2 border-1 ">Shared</button>
-                                        <button class="bg-transparent px-2 border-1">Personal</button>
-                                    </div>
-                                 </div>
-                                <!-- Duration type -->
-                                 <div class="d-flex flex-column gap-3">
-                                    <h6 class="fw-bold">Duration Type</h6>
-                                    <div class="d-flex gap-2">
-                                        <button class="bg-transparent px-2 border-1 ">1 Month</button>
-                                        <button class="bg-transparent px-2 border-1">3 Month</button>
-                                        <button class="bg-transparent px-2 border-1">Half Yearly</button>
-                                        <button class="bg-transparent px-2 border-1">Yearly</button>
-                                    </div>
-                                 </div>
-                                 <hr>
-                                 
+                            <p class="mb-4 w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                                nostrum labore, illum ipsum, voluptate eius accusantium architecto nobis consequatur
+                                eligendi voluptates, illo totam tempore nesciunt.</p>
+
+                            <!-- Account Type -->
+                            <div class="d-flex flex-column gap-3 mb-3">
+                                <h6 class="fw-bold">Account Type</h6>
+                                <div class="d-flex gap-1 gap-lg-2">
+                                    <button class="btn btn-outline-info account-type"
+                                        data-group="account">Shared</button>
+                                    <button class="btn btn-outline-info account-type"
+                                        data-group="account">Personal</button>
+                                </div>
+                            </div>
+
+                            <!-- Duration Type -->
+                            <div class="d-flex flex-column gap-3">
+                                <h6 class="fw-bold">Duration Type</h6>
+                                <div class="d-flex gap-1 gap-lg-2">
+                                    <button class="btn btn-outline-info duration-type" data-group="duration">1
+                                        Month</button>
+                                    <button class="btn btn-outline-info duration-type" data-group="duration">3
+                                        Month</button>
+                                    <button class="btn btn-outline-info duration-type" data-group="duration">Half
+                                        Yearly</button>
+                                    <button class="btn btn-outline-info duration-type"
+                                        data-group="duration">Yearly</button>
+                                </div>
+                            </div>
+
+                            <div class="clear-btn mt-2 text-secondary d-inline-block" role="button">
+                                CLEAR
+                            </div>
+                            <hr>
+                            <div class="pricing-part">
+                                <h4 class="text-danger"><strike>$199</strike> <span class="ms-2 fw-bold">$99</span></h4>
+                            </div>
+
+                            <div class="my-3">
+                                <label for="exampleFormControlInput1" class="form-label fw-bold">Input Email </label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                            </div>
+
+                            <!-- buy now part  -->
+                            <div class="buy-now-part mt-4">
+                                <button class="btn btn-success fw-bold text-capitalize btn-lg">Buy Now <i
+                                        class="fas fa-shopping-cart"></i></button>
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
+                    <!-- accordion part -->
+                <div class="accordion mt-5" id="accordionExample">
+                    <div class="accordion-item ">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button fw-bold shadow-none" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Description
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p class="mb-4 w-75">
+                                    <h3 class="mb-4">Our Services</h3>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                                    nostrum labore, illum ipsum, voluptate eius accusantium architecto nobis consequatur
+                                    eligendi voluptates, illo totam tempore nesciunt.</p>
+                                <p class="mb-4 w-75">
+                                    <h3 class="mb-4">How to Purchase a Package?</h3>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                                    nostrum labore, illum ipsum, voluptate eius accusantium architecto nobis consequatur
+                                    eligendi voluptates, illo totam tempore nesciunt.</p>
+                                <p class="mb-4 w-75">
+                                    <h3 class="mb-4">How to Get an Account?</h3>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                                    nostrum labore, illum ipsum, voluptate eius accusantium architecto nobis consequatur
+                                    eligendi voluptates, illo totam tempore nesciunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item ">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold shadow-none" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Additional Information
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td>Account Type</td>
+                                            <td>Shared, Personal</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Duration</td>
+                                            <td>1 Month, 3 Month, Half Yearly, Yearly</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
             </div>
         </section>
+        <!-- related products -->
+        <section class="section-products py-5">
+            <div class="container">
+              <div class="section-title text-start mb-1">
+                <h2 class="text-start h6 d-inline-block bg-prmry fw-medium mb-2 px-2 py-1">Related Products</h2>
+              </div>
+              <div class="row mt-5">
+                <!-- Single Product -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                  <div id="product-1" class="single-product">
+                    <div class="part-1">
+                      <span class="discount">15% off</span>
+                      <img src="./assets/images/Netflix-product.webp" class="" alt="">
+                      <div>
+                        <a href="#">Buy Now <i class="fas fa-shopping-cart"></i></a>
+                      </div>
+                    </div>
+                    <div class="part-2">
+                      <h3 class="product-title">Netflix Subscription</h3>
+                      <h4 class="product-old-price text-decoration-line-through">$79.99</h4>
+                      <h4 class="product-price">$49.99</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                  <div id="product-2" class="single-product">
+                    <div class="part-1">
+                      <span class="new">new</span>
+                      <img src="./assets/images/sports.jpg" class="" alt="">
+                      <div>
+                        <a href="#">Buy Now <i class="fas fa-shopping-cart"></i></a>
+                      </div>
+                    </div>
+                    <div class="part-2">
+                      <h3 class="product-title">Sports Subscription</h3>
+                      <h4 class="product-price">$49.99</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                  <div id="product-3" class="single-product">
+                    <div class="part-1">
+                      <span class="discount">10% off</span>
+                      <img src="./assets/images/Netflix-product.webp" class="" alt="">
+                      <div>
+                        <a href="#">Buy Now <i class="fas fa-shopping-cart"></i></a>
+                      </div>
+                    </div>
+                    <div class="part-2">
+                      <h3 class="product-title">Netflix Subscription</h3>
+                      <h4 class="product-old-price text-decoration-line-through">$79.99</h4>
+                      <h4 class="product-price">$49.99</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                  <div id="product-4" class="single-product">
+                    <div class="part-1">
+                      <span class="discount">15% off</span>
+                      <img src="./assets/images/AiProduct.jpg" class="" alt="">
+                      <div>
+                        <a href="#">Buy Now <i class="fas fa-shopping-cart"></i></a>
+                      </div>
+                    </div>
+                    <div class="part-2">
+                      <h3 class="product-title">AI Subscription</h3>
+                      <h4 class="product-old-price text-decoration-line-through">$79.99</h4>
+                      <h4 class="product-price">$49.99</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
     </main>
     <!-- Al JS links Here -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
@@ -82,6 +254,28 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
     <script src="./assets/js/venobox.min.js"></script>
+    <!-- jQuery -->
+    <script>
+        $(document).ready(function () {
+            // Handle button click
+            $('button[data-group]').on('click', function () {
+                var group = $(this).data('group');
+
+                // Toggle active state
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active');
+                } else {
+                    $('button[data-group="' + group + '"]').removeClass('active');
+                    $(this).addClass('active');
+                }
+            });
+
+            // Clear button click
+            $('.clear-btn').on('click', function () {
+                $('button[data-group]').removeClass('active');
+            });
+        });
+    </script>
     <script src="./assets/js/custom.js"></script>
 </body>
 
