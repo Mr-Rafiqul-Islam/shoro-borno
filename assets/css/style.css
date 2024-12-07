@@ -262,7 +262,7 @@ a {
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  padding: 10px 20px;
+  padding: 8px 15px;
   font-size: 14px;
   line-height: 24px;
   background-color: var(--logo-color);
@@ -271,6 +271,7 @@ a {
   box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
   transition: var(--transition);
 }
+
 
 .section-products .single-product .part-1 div a:hover {
   color: black;
