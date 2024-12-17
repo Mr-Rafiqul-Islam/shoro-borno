@@ -638,3 +638,12 @@ color: white;
   background-repeat: no-repeat;
   padding:100px 0;
 }
+
+
+ /* for breadcrumb banner */
+ .cover-pic-header {
+  color: white;
+  text-align: center;
+  position: relative;
+  height: 30vh;
+}
