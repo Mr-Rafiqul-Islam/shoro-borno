@@ -193,8 +193,20 @@
             .table>:not(caption)>*>* {
                 padding: 0px .5rem;
             }
-        }
 
+            .form-control {
+                font-size: 10px;
+            }
+
+            .btn-group-sm>.btn,
+            .btn-sm {
+                --bs-btn-padding-y: 1px;
+                --bs-btn-padding-x: 6px;
+            }
+        }
+        .form-control {
+            padding: .375rem 4px;
+        }
         .shopping-cart-footer {
             display: table;
             width: 100%;
@@ -283,8 +295,26 @@
                             </td>
 
                             <td class="text-center text-lg text-medium">$43.90</td>
-                            <td class="text-center text-lg text-medium">Free trial</td>
-                            <td class="text-center text-lg text-medium">1</td>
+                            <td class="text-center">
+                                <!-- duration counter -->
+                                <div class="d-inline-flex align-items-center gap-2">
+                                    <button id="device-decrease" class="btn btn-outline-info btn-sm">-</button>
+                                    <input id="device-counter" type="text" value="12"
+                                        class="form-control text-center py-1" style="width: 30px;" readonly />
+                                    <button id="device-increase" class="btn btn-outline-info btn-sm">+</button>
+                                </div>
+                            </td>
+                            <td class="text-center text-lg text-medium">
+                                <!-- Devices Counter -->
+
+                                <div class="d-inline-flex align-items-center gap-2">
+                                    <button id="device-decrease" class="btn btn-outline-info btn-sm">-</button>
+                                    <input id="device-counter" type="text" value="1"
+                                        class="form-control text-center py-1" style="width: 30px;" readonly />
+                                    <button id="device-increase" class="btn btn-outline-info btn-sm">+</button>
+                                </div>
+
+                            </td>
                             <td class="text-center"><a class="remove-from-cart" href="#" data-toggle="tooltip" title=""
                                     data-original-title="Remove item"><i class="fa fa-trash"></i></a></td>
                         </tr>
@@ -300,8 +330,26 @@
                             </td>
 
                             <td class="text-center text-lg text-medium">$24.89</td>
-                            <td class="text-center">Monthly</td>
-                            <td class="text-center text-lg text-medium">2</td>
+                            <td class="text-center">
+                                <!-- duration counter -->
+                                <div class="d-inline-flex align-items-center gap-2">
+                                    <button id="device-decrease" class="btn btn-outline-info btn-sm">-</button>
+                                    <input id="device-counter" type="text" value="1"
+                                        class="form-control text-center py-1" style="width: 30px;" readonly />
+                                    <button id="device-increase" class="btn btn-outline-info btn-sm">+</button>
+                                </div>
+                            </td>
+                            <td class="text-center text-lg text-medium">
+                                <!-- Devices Counter -->
+
+                                <div class="d-inline-flex align-items-center gap-2">
+                                    <button id="device-decrease" class="btn btn-outline-info btn-sm">-</button>
+                                    <input id="device-counter" type="text" value="1"
+                                        class="form-control text-center py-1" style="width: 30px;" readonly />
+                                    <button id="device-increase" class="btn btn-outline-info btn-sm">+</button>
+                                </div>
+
+                            </td>
                             <td class="text-center"><a class="remove-from-cart" href="#" data-toggle="tooltip" title=""
                                     data-original-title="Remove item"><i class="fa fa-trash"></i></a></td>
                         </tr>
@@ -317,8 +365,26 @@
                             </td>
 
                             <td class="text-center text-lg text-medium">$200.00</td>
-                            <td class="text-center">Yearly</td>
-                            <td class="text-center text-lg text-medium">1</td>
+                            <td class="text-center">
+                                <!-- duration counter -->
+                                <div class="d-inline-flex align-items-center gap-2">
+                                    <button id="device-decrease" class="btn btn-outline-info btn-sm">-</button>
+                                    <input id="device-counter" type="text" value="1"
+                                        class="form-control text-center py-1" style="width: 30px;" readonly />
+                                    <button id="device-increase" class="btn btn-outline-info btn-sm">+</button>
+                                </div>
+                            </td>
+                            <td class="text-center text-lg text-medium">
+                                <!-- Devices Counter -->
+
+                                <div class="d-inline-flex align-items-center gap-2">
+                                    <button id="device-decrease" class="btn btn-outline-info btn-sm">-</button>
+                                    <input id="device-counter" type="text" value="1"
+                                        class="form-control text-center py-1" style="width: 30px;" readonly />
+                                    <button id="device-increase" class="btn btn-outline-info btn-sm">+</button>
+                                </div>
+
+                            </td>
                             <td class="text-center"><a class="remove-from-cart" href="#" data-toggle="tooltip" title=""
                                     data-original-title="Remove item"><i class="fa fa-trash"></i></a></td>
                         </tr>
@@ -341,7 +407,7 @@
                     </a>
                 </div>
                 <div class="column">
-                    <a class="btn btn-success" href="check-out.html">Checkout</a>
+                    <a class="btn btn-success" href="./check-out.html">Checkout</a>
                 </div>
             </div>
         </div>
