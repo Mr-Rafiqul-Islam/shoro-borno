@@ -76,7 +76,7 @@
             text-decoration: none
         }
 
-        
+
 
         .shopping-cart .product-item,
         .wishlist-table .product-item,
@@ -121,7 +121,7 @@
             }
         }
 
-        
+
 
 
         .shopping-cart .product-item .product-title,
@@ -163,6 +163,35 @@
         @media screen and (max-width: 576px) {
             .wishlist-table .product-item .product-thumb {
                 display: none !important
+            }
+
+            .shopping-cart .product-item .product-title {
+                font-size: 10px;
+            }
+
+            .shopping-cart .product-item,
+            .wishlist-table .product-item,
+            .order-table .product-item {
+                min-width: 60px;
+            }
+
+            .shopping-cart>table>thead>tr>th,
+            .shopping-cart>table>thead>tr>td,
+            .shopping-cart>table>tbody>tr>th,
+            .shopping-cart>table>tbody>tr>td,
+            .wishlist-table>table>thead>tr>th,
+            .wishlist-table>table>thead>tr>td,
+            .wishlist-table>table>tbody>tr>th,
+            .wishlist-table>table>tbody>tr>td,
+            .order-table>table>thead>tr>th,
+            .order-table>table>thead>tr>td,
+            .order-table>table>tbody>tr>th,
+            .order-table>table>tbody>tr>td {
+                font-size: 10px;
+            }
+
+            .table>:not(caption)>*>* {
+                padding: 0px .5rem;
             }
         }
 
@@ -219,13 +248,14 @@
 
 <body>
     <!-- breadcrumb cover pic -->
-  <section class="cover-pic-header">
-    <img src="./assets/images/ai.jpg" class="h-100 w-100" alt="">
-      <h1 class="text-center fw-bold text-uppercase display-5 position-absolute top-50 start-50 translate-middle">Cart</h1>
-  </section>
+    <section class="cover-pic-header">
+        <img src="./assets/images/ai.jpg" class="h-100 w-100" alt="">
+        <h1 class="text-center fw-bold text-uppercase display-5 position-absolute top-50 start-50 translate-middle">Cart
+        </h1>
+    </section>
     <!-- breadcrumb cover pic -->
     <main>
-        <div class="container padding-bottom-3x mb-1">
+        <div class="container padding-bottom-3x mb-1 pt-5">
 
             <!-- Shopping Cart-->
             <div class="table-responsive shopping-cart">
@@ -234,8 +264,9 @@
                         <tr>
                             <th>Product Name</th>
                             <th class="text-center">Price</th>
-                            <th class="text-center">Type</th>
-                            <th class="text-center"><a class="btn btn-sm btn-outline-danger" href="#">Clear Cart</a>
+                            <th class="text-center">Duration</th>
+                            <th class="text-center">Device Access</th>
+                            <th class="text-center">Action
                             </th>
                         </tr>
                     </thead>
@@ -253,6 +284,7 @@
 
                             <td class="text-center text-lg text-medium">$43.90</td>
                             <td class="text-center text-lg text-medium">Free trial</td>
+                            <td class="text-center text-lg text-medium">1</td>
                             <td class="text-center"><a class="remove-from-cart" href="#" data-toggle="tooltip" title=""
                                     data-original-title="Remove item"><i class="fa fa-trash"></i></a></td>
                         </tr>
@@ -269,6 +301,7 @@
 
                             <td class="text-center text-lg text-medium">$24.89</td>
                             <td class="text-center">Monthly</td>
+                            <td class="text-center text-lg text-medium">2</td>
                             <td class="text-center"><a class="remove-from-cart" href="#" data-toggle="tooltip" title=""
                                     data-original-title="Remove item"><i class="fa fa-trash"></i></a></td>
                         </tr>
@@ -285,6 +318,7 @@
 
                             <td class="text-center text-lg text-medium">$200.00</td>
                             <td class="text-center">Yearly</td>
+                            <td class="text-center text-lg text-medium">1</td>
                             <td class="text-center"><a class="remove-from-cart" href="#" data-toggle="tooltip" title=""
                                     data-original-title="Remove item"><i class="fa fa-trash"></i></a></td>
                         </tr>
@@ -307,8 +341,7 @@
                     </a>
                 </div>
                 <div class="column">
-                    <a class="btn btn-success"
-                        href="check-out.html">Checkout</a>
+                    <a class="btn btn-success" href="check-out.html">Checkout</a>
                 </div>
             </div>
         </div>

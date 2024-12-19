@@ -31,7 +31,8 @@
             color: white;
             border-color: #0dcaf0;
         }
-        .product-details .buy-now-part{
+
+        .product-details .buy-now-part {
             display: flex;
             gap: 16px;
         }
@@ -67,29 +68,26 @@
                                 nostrum labore, illum ipsum, voluptate eius accusantium architecto nobis consequatur
                                 eligendi voluptates, illo totam tempore nesciunt.</p>
 
-                            <!-- Account Type -->
+                            <!-- Devices Counter -->
                             <div class="d-flex flex-column gap-3 mb-3">
-                                <h6 class="fw-bold">Account Type</h6>
-                                <div class="d-flex gap-1 gap-lg-2">
-                                    <button class="btn btn-outline-info account-type"
-                                        data-group="account">Shared</button>
-                                    <button class="btn btn-outline-info account-type"
-                                        data-group="account">Personal</button>
+                                <h6 class="fw-bold">Device Access</h6>
+                                <div class="d-flex align-items-center gap-2">
+                                    <button id="device-decrease" class="btn btn-outline-info">-</button>
+                                    <input id="device-counter" type="text" value="1" class="form-control text-center"
+                                        style="width: 60px;" readonly />
+                                    <button id="device-increase" class="btn btn-outline-info">+</button>
                                 </div>
                             </div>
 
-                            <!-- Duration Type -->
+
+                            <!-- Duration Type Counter -->
                             <div class="d-flex flex-column gap-3">
-                                <h6 class="fw-bold">Duration Type</h6>
-                                <div class="d-flex gap-1 gap-lg-2">
-                                    <button class="btn btn-outline-info duration-type" data-group="duration">1
-                                        Month</button>
-                                    <button class="btn btn-outline-info duration-type" data-group="duration">3
-                                        Month</button>
-                                    <button class="btn btn-outline-info duration-type" data-group="duration">Half
-                                        Yearly</button>
-                                    <button class="btn btn-outline-info duration-type"
-                                        data-group="duration">Yearly</button>
+                                <h6 class="fw-bold">Duration Type (Months)</h6>
+                                <div class="d-flex align-items-center gap-2">
+                                    <button id="decrease-btn" class="btn btn-outline-info">-</button>
+                                    <input id="duration-counter" type="text" value="1" class="form-control text-center"
+                                        style="width: 60px;" readonly />
+                                    <button id="increase-btn" class="btn btn-outline-info">+</button>
                                 </div>
                             </div>
 
@@ -120,7 +118,7 @@
                         </div>
                     </div>
                 </div>
-                    <!-- accordion part -->
+                <!-- accordion part -->
                 <div class="accordion mt-5" id="accordionExample">
                     <div class="accordion-item ">
                         <h2 class="accordion-header">
@@ -133,27 +131,28 @@
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <p class="mb-4 w-75">
-                                    <h3 class="mb-4">Our Services</h3>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                                    nostrum labore, illum ipsum, voluptate eius accusantium architecto nobis consequatur
-                                    eligendi voluptates, illo totam tempore nesciunt.</p>
+                                <h3 class="mb-4">Our Services</h3>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                                nostrum labore, illum ipsum, voluptate eius accusantium architecto nobis consequatur
+                                eligendi voluptates, illo totam tempore nesciunt.</p>
                                 <p class="mb-4 w-75">
-                                    <h3 class="mb-4">How to Purchase a Package?</h3>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                                    nostrum labore, illum ipsum, voluptate eius accusantium architecto nobis consequatur
-                                    eligendi voluptates, illo totam tempore nesciunt.</p>
+                                <h3 class="mb-4">How to Purchase a Package?</h3>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                                nostrum labore, illum ipsum, voluptate eius accusantium architecto nobis consequatur
+                                eligendi voluptates, illo totam tempore nesciunt.</p>
                                 <p class="mb-4 w-75">
-                                    <h3 class="mb-4">How to Get an Account?</h3>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-                                    nostrum labore, illum ipsum, voluptate eius accusantium architecto nobis consequatur
-                                    eligendi voluptates, illo totam tempore nesciunt.</p>
+                                <h3 class="mb-4">How to Get an Account?</h3>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+                                nostrum labore, illum ipsum, voluptate eius accusantium architecto nobis consequatur
+                                eligendi voluptates, illo totam tempore nesciunt.</p>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item ">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed fw-bold shadow-none" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed fw-bold shadow-none" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
                                 Additional Information
                             </button>
                         </h2>
@@ -169,9 +168,23 @@
                                             <td>Duration</td>
                                             <td>1 Month, 3 Month, Half Yearly, Yearly</td>
                                         </tr>
-                                        
+
                                     </tbody>
                                 </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item ">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fw-bold shadow-none" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Tutorial
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/lJzVc2uN5tc?si=naK4zpACgvA8DTCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -183,81 +196,81 @@
         <!-- related products -->
         <section class="section-products py-5">
             <div class="container">
-              <div class="section-title text-start mb-1">
-                <h2 class="text-start h6 d-inline-block bg-prmry fw-medium mb-2 px-2 py-1">Related Products</h2>
-              </div>
-              <div class="row mt-5">
-                <!-- Single Product -->
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-1" class="single-product">
-                    <div class="part-1">
-                      <span class="discount">15% off</span>
-                      <img src="./assets/images/Netflix-product.webp" class="" alt="">
-                      <div class="d-flex gap-3">
-                        <a href="#">Buy <i class="fas fa-shopping-cart"></i></a>
-                        <a href="#">Free<i class="fa-solid fa-gift"></i></a>
-                      </div>
-                    </div>
-                    <div class="part-2">
-                      <h3 class="product-title">Netflix Subscription</h3>
-                      <h4 class="product-old-price text-decoration-line-through">$79.99</h4>
-                      <h4 class="product-price">$49.99</h4>
-                    </div>
-                  </div>
+                <div class="section-title text-start mb-1">
+                    <h2 class="text-start h6 d-inline-block bg-prmry fw-medium mb-2 px-2 py-1">Related Products</h2>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-2" class="single-product">
-                    <div class="part-1">
-                      <span class="new">new</span>
-                      <img src="./assets/images/sports.jpg" class="" alt="">
-                      <div class="d-flex gap-3">
-                        <a href="#">Buy <i class="fas fa-shopping-cart"></i></a>
-                        <a href="#">Free<i class="fa-solid fa-gift"></i></a>
-                      </div>
+                <div class="row mt-5">
+                    <!-- Single Product -->
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div id="product-1" class="single-product">
+                            <div class="part-1">
+                                <span class="discount">15% off</span>
+                                <img src="./assets/images/Netflix-product.webp" class="" alt="">
+                                <div class="d-flex gap-3">
+                                    <a href="#">Buy <i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#">Free<i class="fa-solid fa-gift"></i></a>
+                                </div>
+                            </div>
+                            <div class="part-2">
+                                <h3 class="product-title">Netflix Subscription</h3>
+                                <h4 class="product-old-price text-decoration-line-through">$79.99</h4>
+                                <h4 class="product-price">$49.99</h4>
+                            </div>
+                        </div>
                     </div>
-                    <div class="part-2">
-                      <h3 class="product-title">Sports Subscription</h3>
-                      <h4 class="product-price">$49.99</h4>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div id="product-2" class="single-product">
+                            <div class="part-1">
+                                <span class="new">new</span>
+                                <img src="./assets/images/sports.jpg" class="" alt="">
+                                <div class="d-flex gap-3">
+                                    <a href="#">Buy <i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#">Free<i class="fa-solid fa-gift"></i></a>
+                                </div>
+                            </div>
+                            <div class="part-2">
+                                <h3 class="product-title">Sports Subscription</h3>
+                                <h4 class="product-price">$49.99</h4>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div id="product-3" class="single-product">
+                            <div class="part-1">
+                                <span class="discount">10% off</span>
+                                <img src="./assets/images/Netflix-product.webp" class="" alt="">
+                                <div class="d-flex gap-3">
+                                    <a href="#">Buy <i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#">Free<i class="fa-solid fa-gift"></i></a>
+                                </div>
+                            </div>
+                            <div class="part-2">
+                                <h3 class="product-title">Netflix Subscription</h3>
+                                <h4 class="product-old-price text-decoration-line-through">$79.99</h4>
+                                <h4 class="product-price">$49.99</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+                        <div id="product-4" class="single-product">
+                            <div class="part-1">
+                                <span class="discount">15% off</span>
+                                <img src="./assets/images/AiProduct.jpg" class="" alt="">
+                                <div class="d-flex gap-3">
+                                    <a href="#">Buy <i class="fas fa-shopping-cart"></i></a>
+                                    <a href="#">Free<i class="fa-solid fa-gift"></i></a>
+                                </div>
+                            </div>
+                            <div class="part-2">
+                                <h3 class="product-title">AI Subscription</h3>
+                                <h4 class="product-old-price text-decoration-line-through">$79.99</h4>
+                                <h4 class="product-price">$49.99</h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-3" class="single-product">
-                    <div class="part-1">
-                      <span class="discount">10% off</span>
-                      <img src="./assets/images/Netflix-product.webp" class="" alt="">
-                      <div class="d-flex gap-3">
-                        <a href="#">Buy <i class="fas fa-shopping-cart"></i></a>
-                        <a href="#">Free<i class="fa-solid fa-gift"></i></a>
-                      </div>
-                    </div>
-                    <div class="part-2">
-                      <h3 class="product-title">Netflix Subscription</h3>
-                      <h4 class="product-old-price text-decoration-line-through">$79.99</h4>
-                      <h4 class="product-price">$49.99</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-4 col-xl-3">
-                  <div id="product-4" class="single-product">
-                    <div class="part-1">
-                      <span class="discount">15% off</span>
-                      <img src="./assets/images/AiProduct.jpg" class="" alt="">
-                      <div class="d-flex gap-3">
-                        <a href="#">Buy <i class="fas fa-shopping-cart"></i></a>
-                        <a href="#">Free<i class="fa-solid fa-gift"></i></a>
-                      </div>
-                    </div>
-                    <div class="part-2">
-                      <h3 class="product-title">AI Subscription</h3>
-                      <h4 class="product-old-price text-decoration-line-through">$79.99</h4>
-                      <h4 class="product-price">$49.99</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </section>
+        </section>
     </main>
     <!-- Al JS links Here -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
@@ -268,22 +281,46 @@
     <!-- jQuery -->
     <script>
         $(document).ready(function () {
-            // Handle button click
-            $('button[data-group]').on('click', function () {
-                var group = $(this).data('group');
+            // Device Counter (Limit: 1-2)
+            const deviceMin = 1;
+            const deviceMax = 2;
 
-                // Toggle active state
-                if ($(this).hasClass('active')) {
-                    $(this).removeClass('active');
-                } else {
-                    $('button[data-group="' + group + '"]').removeClass('active');
-                    $(this).addClass('active');
+            $('#device-increase').on('click', function () {
+                let value = parseInt($('#device-counter').val());
+                if (value < deviceMax) {
+                    $('#device-counter').val(value + 1);
                 }
             });
 
-            // Clear button click
+            $('#device-decrease').on('click', function () {
+                let value = parseInt($('#device-counter').val());
+                if (value > deviceMin) {
+                    $('#device-counter').val(value - 1);
+                }
+            });
+
+            // Duration Counter (Limit: 1-12)
+            const durationMin = 1;
+            const durationMax = 12;
+
+            $('#increase-btn').on('click', function () {
+                let value = parseInt($('#duration-counter').val());
+                if (value < durationMax) {
+                    $('#duration-counter').val(value + 1);
+                }
+            });
+
+            $('#decrease-btn').on('click', function () {
+                let value = parseInt($('#duration-counter').val());
+                if (value > durationMin) {
+                    $('#duration-counter').val(value - 1);
+                }
+            });
+
+            // Clear Button (Reset both counters)
             $('.clear-btn').on('click', function () {
-                $('button[data-group]').removeClass('active');
+                $('#device-counter').val(deviceMin);
+                $('#duration-counter').val(durationMin);
             });
         });
     </script>
