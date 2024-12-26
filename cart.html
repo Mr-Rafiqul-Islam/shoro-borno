@@ -204,9 +204,11 @@
                 --bs-btn-padding-x: 6px;
             }
         }
+
         .form-control {
             padding: .375rem 4px;
         }
+
         .shopping-cart-footer {
             display: table;
             width: 100%;
@@ -274,123 +276,86 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Product Name</th>
+                            <th>Item Name</th>
                             <th class="text-center">Price</th>
-                            <th class="text-center">Duration</th>
-                            <th class="text-center">Device Access</th>
-                            <th class="text-center">Action
-                            </th>
+                            <th class="text-center">Details</th>
+                            <th class="text-center">Total Price</th>
+                            <th class="text-center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <!-- Conditional Rendering Based on product_id or package_id -->
+
                             <td>
                                 <div class="product-item">
-                                    <a class="product-thumb" href="#"><img
-                                            src="https://www.bootdey.com/image/220x180/FF0000/000000" alt="Product"></a>
+                                    <a class="product-thumb" href="#">
+                                        <img src="https://www.bootdey.com/image/220x180/9932CC/000000" alt="Product" />
+                                    </a>
                                     <div class="product-info">
-                                        <h4 class="product-title"><a href="#">Unionbay Park</a></h4>
+                                        <h4 class="product-title">
+                                            <a href="#">Product name</a>
+                                        </h4>
                                     </div>
                                 </div>
                             </td>
-
-                            <td class="text-center text-lg text-medium">$43.90</td>
-                            <td class="text-center">
-                                <!-- duration counter -->
-                                <div class="d-inline-flex align-items-center gap-2">
-                                    <button id="device-decrease" class="btn btn-outline-info btn-sm">-</button>
-                                    <input id="device-counter" type="text" value="12"
-                                        class="form-control text-center py-1" style="width: 30px;" readonly />
-                                    <button id="device-increase" class="btn btn-outline-info btn-sm">+</button>
-                                </div>
-                            </td>
+                            <td class="text-center text-lg text-medium">300$</td>
                             <td class="text-center text-lg text-medium">
-                                <!-- Devices Counter -->
+                                <div class="d-flex flex-column w-100 align-items-center gap-2 py-1 py-lg-0">
+                                    <!-- duration counter -->
+                                    <div class="d-inline-flex align-items-center gap-2">
+                                        Duration:
+                                        <button id="device-decrease" class="btn btn-outline-info btn-sm">-</button>
+                                        <input id="device-counter" type="text" value="1"
+                                            class="form-control text-center py-1" style="width: 30px;" readonly />
+                                        <button id="device-increase" class="btn btn-outline-info btn-sm">+</button>
+                                    </div>
+                                    <!-- Devices Counter -->
 
-                                <div class="d-inline-flex align-items-center gap-2">
-                                    <button id="device-decrease" class="btn btn-outline-info btn-sm">-</button>
-                                    <input id="device-counter" type="text" value="1"
-                                        class="form-control text-center py-1" style="width: 30px;" readonly />
-                                    <button id="device-increase" class="btn btn-outline-info btn-sm">+</button>
+                                    <div class="d-inline-flex align-items-center gap-2">
+                                        Device :
+                                        <button id="device-decrease" class="btn btn-outline-info btn-sm">-</button>
+                                        <input id="device-counter" type="text" value="1"
+                                            class="form-control text-center py-1" style="width: 30px;" readonly />
+                                        <button id="device-increase" class="btn btn-outline-info btn-sm">+</button>
+                                    </div>
                                 </div>
-
                             </td>
-                            <td class="text-center"><a class="remove-from-cart" href="#" data-toggle="tooltip" title=""
-                                    data-original-title="Remove item"><i class="fa fa-trash"></i></a></td>
+                            <td class="text-center text-lg text-medium">300$</td>
+                            <td class="text-center">
+                                <a class="remove-from-cart" href="#" data-toggle="tooltip" title="Remove item">
+                                    <i class="fa fa-trash"></i>
+                                </a>
+                            </td>
+
+
                         </tr>
                         <tr>
                             <td>
                                 <div class="product-item">
-                                    <a class="product-thumb" href="#"><img
-                                            src="https://www.bootdey.com/image/220x180/5F9EA0/000000" alt="Product"></a>
+                                    <a class="product-thumb" href="#">
+                                        <img src="https://www.bootdey.com/image/220x180/5F9EA0/000000" alt="Package" />
+                                    </a>
                                     <div class="product-info">
-                                        <h4 class="product-title"><a href="#">Daily Fabric Cap</a></h4>
+                                        <h4 class="product-title">
+                                            <a href="#">Package Name</a>
+                                        </h4>
                                     </div>
                                 </div>
                             </td>
-
-                            <td class="text-center text-lg text-medium">$24.89</td>
+                            <td class="text-center text-lg text-medium">600$</td>
+                            <td class="text-center text-lg text-medium">Type: Free | Duration: Half Yearly</td>
+                            <td class="text-center text-lg text-medium">600$</td>
                             <td class="text-center">
-                                <!-- duration counter -->
-                                <div class="d-inline-flex align-items-center gap-2">
-                                    <button id="device-decrease" class="btn btn-outline-info btn-sm">-</button>
-                                    <input id="device-counter" type="text" value="1"
-                                        class="form-control text-center py-1" style="width: 30px;" readonly />
-                                    <button id="device-increase" class="btn btn-outline-info btn-sm">+</button>
-                                </div>
+                                <a class="remove-from-cart" href="#" data-toggle="tooltip" title="Remove item">
+                                    <i class="fa fa-trash"></i>
+                                </a>
                             </td>
-                            <td class="text-center text-lg text-medium">
-                                <!-- Devices Counter -->
-
-                                <div class="d-inline-flex align-items-center gap-2">
-                                    <button id="device-decrease" class="btn btn-outline-info btn-sm">-</button>
-                                    <input id="device-counter" type="text" value="1"
-                                        class="form-control text-center py-1" style="width: 30px;" readonly />
-                                    <button id="device-increase" class="btn btn-outline-info btn-sm">+</button>
-                                </div>
-
-                            </td>
-                            <td class="text-center"><a class="remove-from-cart" href="#" data-toggle="tooltip" title=""
-                                    data-original-title="Remove item"><i class="fa fa-trash"></i></a></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="product-item">
-                                    <a class="product-thumb" href="#"><img
-                                            src="https://www.bootdey.com/image/220x180/9932CC/000000" alt="Product"></a>
-                                    <div class="product-info">
-                                        <h4 class="product-title"><a href="#">Cole Haan Crossbody</a></h4>
-                                    </div>
-                                </div>
-                            </td>
-
-                            <td class="text-center text-lg text-medium">$200.00</td>
-                            <td class="text-center">
-                                <!-- duration counter -->
-                                <div class="d-inline-flex align-items-center gap-2">
-                                    <button id="device-decrease" class="btn btn-outline-info btn-sm">-</button>
-                                    <input id="device-counter" type="text" value="1"
-                                        class="form-control text-center py-1" style="width: 30px;" readonly />
-                                    <button id="device-increase" class="btn btn-outline-info btn-sm">+</button>
-                                </div>
-                            </td>
-                            <td class="text-center text-lg text-medium">
-                                <!-- Devices Counter -->
-
-                                <div class="d-inline-flex align-items-center gap-2">
-                                    <button id="device-decrease" class="btn btn-outline-info btn-sm">-</button>
-                                    <input id="device-counter" type="text" value="1"
-                                        class="form-control text-center py-1" style="width: 30px;" readonly />
-                                    <button id="device-increase" class="btn btn-outline-info btn-sm">+</button>
-                                </div>
-
-                            </td>
-                            <td class="text-center"><a class="remove-from-cart" href="#" data-toggle="tooltip" title=""
-                                    data-original-title="Remove item"><i class="fa fa-trash"></i></a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+
             <div class="shopping-cart-footer">
                 <div class="column">
                     <form class="coupon-form" method="post">
